@@ -23,13 +23,13 @@ function makeEaseOut(timing) {
   }
   start.onclick = function() {
 
-    let to = main.clientHeight - happyBirthdayImg.clientHeight;
+    let to = main.clientHeight - happyBirthdayImg.clientHeight + 80;
 
     animate({
       duration: 2000,
       timing: makeEaseOut(bounce),
       draw(progress) {
-        happyBirthdayImg.style.top = to * progress + 'px'
+        happyBirthdayImg.style.top =  to * progress + 'px'
       }
     });
   };
