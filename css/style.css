@@ -50,6 +50,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
       position: absolute;
       left: 330px;
       cursor: pointer;
+      z-index: 999;
   }
 
   .hidden {
@@ -81,7 +82,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     width: 150px;
     height: 60px;;
     position: relative;
-    left: 370px;
+    /* left: 370px; */
     font-size: 30px;
   }
 

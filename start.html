@@ -10,18 +10,54 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://js.cx/libs/animate.js"></script>    
 </head>
-<body id='body'>
+<body>
+        <!-- NAVIGACJA -->
+
+        <nav class="container-fluid">
+                <div class="btn-group float-right">
+                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          MENU
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="index.html">Powitanie</a>
+                          <a class="dropdown-item active" href="start.html">START</a> 
+                          <div class="dropdown-divider"></div>                                           
+                          <a class="dropdown-item disabled" href="#">Zadanie 1</a>
+                          <a class="dropdown-item disabled" href="#">Zadanie 2</a>
+                          <a class="dropdown-item disabled" href="#">Zadanie 3</a>
+                          <a class="dropdown-item disabled" href="#">Zadanie 4</a>
+                          <a class="dropdown-item disabled" href="#">Zadanie 5</a>
+                          <a class="dropdown-item disabled" href="#">Zadanie 6</a>
+                          <a class="dropdown-item disabled" href="#">Zadanie 7</a>  
+                          <div class="dropdown-divider"></div>                      
+                          <a class="dropdown-item" href="#">Instrukcja</a>                
+                                        
+                        </div>
+                      </div>
+        </nav>
+
+<!-- KONIEC NAVIGACJI -->
+
+<!-- ZAWARTOŚĆ DANEJ STRONY -->
+    <a href="zadanie1.html">
     <img id="happy-birthday-img" class="hidden" src="images/happy-birthday.png">
+    </a>
     <main id="main">
         <div class="container-text">
         </div>
-    <button id="start" type="button" class="btn btn-success">START
-        <a href="start.html"></a>
-    </button>
+<!-- PRZYCISKI NAWIGACYJNE -->
+    <button id="start" type="button" class="btn btn-warning float-right">DALEJ</button>
+    <a href="index.html"><button type="button" class="btn btn-danger float-left">POWRÓT</button></a>
+<!-- KONIEC PRZYCISKÓW NAWIGACYJNYCH -->
+    
     </main>
 
+<!-- KONIEC ZAWARTOŚCI DANEJ STRONY -->
 
-
-<script src="js/start.js"></script>
-</body>
-</html>
+<!-- LINKI DO SCRYPTÓW JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/start.js"></script>
+    </body>
+    </html>
