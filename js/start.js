@@ -1,13 +1,9 @@
+// Zmienne
 var happyBirthdayImg = document.getElementById("happy-birthday-img");
-var start = document.getElementById('start')
 var hidden = document.getElementsByClassName('hidden');
 
-function deleteHiddenClass (event) {
-    happyBirthdayImg.classList.remove('hidden');
-  } 
 
-start.addEventListener('click', deleteHiddenClass);
-
+// Snippet opadania napisu
 function makeEaseOut(timing) {
     return function(timeFraction) {
       return 1 - timing(1 - timeFraction);
@@ -21,8 +17,14 @@ function makeEaseOut(timing) {
       }
     }
   }
-  start.onclick = function() {
 
+  // Pojawienie się napisu po 500 ms
+  setTimeout (function() {
+    happyBirthdayImg.classList.remove('hidden');
+  }, 500);
+
+  // Opadnięcie napisu po 500 ms
+  setTimeout(function() {
     let to = main.clientHeight - happyBirthdayImg.clientHeight + 80;
 
     animate({
@@ -32,4 +34,4 @@ function makeEaseOut(timing) {
         happyBirthdayImg.style.top =  to * progress + 'px'
       }
     });
-  };
+  }, 500);
