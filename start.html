@@ -1,63 +1,109 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GraBiałka</title>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://js.cx/libs/animate.js"></script>    
+    <script src="https://js.cx/libs/animate.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/infobox.css">
 </head>
+
 <body>
-        <!-- NAVIGACJA -->
+    <!-- NAVIGACJA -->
 
-        <nav class="container-fluid">
-                <div class="btn-group float-right">
-                        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          MENU
+    <nav class="container-fluid">
+        <div class="btn-group float-right">
+            <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                MENU
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="index.html">Powitanie</a>
+                <a class="dropdown-item active" href="start.html">START</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item disabled" href="#">Zadanie 1</a>
+                <a class="dropdown-item disabled" href="#">Zadanie 2</a>
+                <a class="dropdown-item disabled" href="#">Zadanie 3</a>
+                <a class="dropdown-item disabled" href="#">Zadanie 4</a>
+                <a class="dropdown-item disabled" href="#">Zadanie 5</a>
+                <a class="dropdown-item disabled" href="#">Zadanie 6</a>
+                <a class="dropdown-item disabled" href="#">Zadanie 7</a>
+            </div>
+        </div>
+        <!-- INSTRUKCJA -->
+        <!-- Trigger/Open The Modal -->
+        <button type="button" id="myBtn" class="btn btn-info">Instrukcja</button>
+
+        <!-- The Modal -->
+        <!-- <div id="myModal" class="modal"> -->
+
+        <!-- Modal content -->
+        <div id="myModal" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">INSTRUKCJA</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
                         </button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="index.html">Powitanie</a>
-                          <a class="dropdown-item active" href="start.html">START</a> 
-                          <div class="dropdown-divider"></div>                                           
-                          <a class="dropdown-item disabled" href="#">Zadanie 1</a>
-                          <a class="dropdown-item disabled" href="#">Zadanie 2</a>
-                          <a class="dropdown-item disabled" href="#">Zadanie 3</a>
-                          <a class="dropdown-item disabled" href="#">Zadanie 4</a>
-                          <a class="dropdown-item disabled" href="#">Zadanie 5</a>
-                          <a class="dropdown-item disabled" href="#">Zadanie 6</a>
-                          <a class="dropdown-item disabled" href="#">Zadanie 7</a>  
-                          <div class="dropdown-divider"></div>                      
-                          <a class="dropdown-item" href="#">Instrukcja</a>                
-                                        
-                        </div>
-                      </div>
-        </nav>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                        <p>1. Modal body text goes here.</p>
+                        <p>2. Modal body text goes here.</p>
+                        <p>3. Modal body text goes here.</p>
+                        <p>4. Modal body text goes here.</p>
+                        <p>5. Modal body text goes here.</p>
+                        <p>6. Modal body text goes here.</p>
+                        <p>7. Modal body text goes here.</p>
 
-<!-- KONIEC NAVIGACJI -->
+                    </div>
+                    <div class="modal-footer">
+                        <p>Tutaj można wpisać coś w stopce.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- KONIEC INSTRYCJI -->
+    </nav>
 
-<!-- ZAWARTOŚĆ DANEJ STRONY -->
+    <!-- KONIEC NAVIGACJI -->
+
+    <!-- ZAWARTOŚĆ DANEJ STRONY -->
     <a href="zadanie1.html">
-    <img id="happy-birthday-img" class="hidden" src="images/happy-birthday.png">
+        <img id="happy-birthday-img" class="hidden" src="images/happy-birthday.png">
     </a>
     <main id="main">
         <div class="container-text">
         </div>
-<!-- PRZYCISKI NAWIGACYJNE -->
-    <a href="zadanie1.html"><button type="button" class="btn btn-warning float-right">DALEJ</button></a>
-    <a href="index.html"><button type="button" class="btn btn-danger float-left">POWRÓT</button></a>
-<!-- KONIEC PRZYCISKÓW NAWIGACYJNYCH -->
-    
+        <!-- PRZYCISKI NAWIGACYJNE -->
+        <a href="zadanie1.html">
+            <button type="button" class="btn btn-warning float-right">DALEJ</button>
+        </a>
+        <a href="index.html">
+            <button type="button" class="btn btn-danger float-left">POWRÓT</button>
+        </a>
+        <!-- KONIEC PRZYCISKÓW NAWIGACYJNYCH -->
+
     </main>
 
-<!-- KONIEC ZAWARTOŚCI DANEJ STRONY -->
+    <!-- KONIEC ZAWARTOŚCI DANEJ STRONY -->
 
-<!-- LINKI DO SCRYPTÓW JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- LINKI DO SCRYPTÓW JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="js/start.js"></script>
-    </body>
-    </html>
+    <script src="js/instrukcja.js"></script>
+
+</body>
+
+</html>
